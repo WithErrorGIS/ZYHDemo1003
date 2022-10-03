@@ -51,11 +51,12 @@ class MyWindow(QMainWindow, Ui_MainWindow, QtWidgets.QWidget):
     # 用于测试，生成三个图层
     def test(self):
 
-        # 定义一个画笔，设置画笔颜色和宽度
+        #定义三个图层
         layer1 = Layer.Layer(1,'layer1')
         layer2 = Layer.Layer(2,'layer2')
         layer3 = Layer.Layer(3,'layer3')
 
+        # 定义一个画笔，设置画笔颜色和宽度
         pen = QPen()
         pen.setColor(QColor(0, 160, 230))
         pen.setWidth(1)
